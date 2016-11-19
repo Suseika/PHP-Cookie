@@ -27,21 +27,21 @@ final class Cookie {
 	const SAME_SITE_RESTRICTION_STRICT = 'Strict';
 
 	/** @var string the name of the cookie which is also the key for future accesses via `$_COOKIE[...]` */
-	private $name;
+	public $name;
 	/** @var mixed the value of the cookie that will be stored on the client's machine */
-	private $value;
+	public $value;
 	/** @var int the Unix timestamp indicating the time that the cookie will expire, i.e. usually `time() + $seconds` */
-	private $expiryTime;
+	public $expiryTime;
 	/** @var string the path on the server that the cookie will be valid for (including all sub-directories), e.g. an empty string for the current directory or `/` for the root directory */
-	private $path;
+	public $path;
 	/** @var string the domain that the cookie will be valid for (including all subdomains) */
-	private $domain;
+	public $domain;
 	/** @var bool indicates that the cookie should be accessible through the HTTP protocol only and not through scripting languages */
-	private $httpOnly;
+	public $httpOnly;
 	/** @var bool indicates that the cookie should be sent back by the client over secure HTTPS connections only */
-	private $secureOnly;
+	public $secureOnly;
 	/** @var string|null indicates that the cookie should not be sent along with cross-site requests (either `null`, `Lax` or `Strict`) */
-	private $sameSiteRestriction;
+	public $sameSiteRestriction;
 
 	/**
 	 * Prepares a new cookie
