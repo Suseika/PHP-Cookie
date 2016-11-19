@@ -1,6 +1,6 @@
 {
-	"name": "delight-im/cookie",
-	"description": "Modern cookie management for PHP",
+	"name": "suseika/delight-im-phpcookie",
+	"description": "Fork of delight-im/phpcookie with open fields of Cookie",
 	"require": {
 		"php": ">=5.3.0",
 		"delight-im/http": "^2.0"
